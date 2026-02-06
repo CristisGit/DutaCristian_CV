@@ -34,6 +34,11 @@ const translations = {
         role_civil: "Civil Engineer (Legacy)",
         job4_preview: "Developed strong logic and analytical skills...",
         job4_story: "For 9 years, I worked as a Civil Engineer. While the domain was different, the mindset was identical to software development: rigorous planning, structural logic, and strict adherence to specifications. <br><br>I managed detailed design documentation using AutoCAD and VBA, which was my first step into programming logic."
+        // Contact Section
+        contact_title: "Get In Touch",
+        contact_desc: "Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+        contact_btn: "Say Hello",
+        nav_contact: "Contact"
     },
     // (Pentru concizie, am inclus doar Engleza aici, dar logica se aplică și la RO/DE)
     ro: {
@@ -66,6 +71,11 @@ const translations = {
         role_civil: "Inginer Civil",
         job4_preview: "Dezvoltare abilități analitice...",
         job4_story: "Timp de 9 ani am aplicat o logică structurală riguroasă în proiectare, folosind AutoCAD și VBA."
+        // Contact
+        contact_title: "Contactează-mă",
+        contact_desc: "Fie că ai o întrebare sau doar vrei să saluți, voi încerca să îți răspund cât mai repede!",
+        contact_btn: "Trimite Email",
+        nav_contact: "Contact"
     },
     de: {
         hero_role: "Automatisierungsentwickler",
@@ -96,5 +106,10 @@ const translations = {
         role_civil: "Bauingenieur",
         job4_preview: "Entwicklung analytischer Fähigkeiten...",
         job4_story: "9 Jahre lang wandte ich strenge strukturelle Logik im Design an, unter Verwendung von AutoCAD und VBA."
+        // Contact
+        contact_title: "Kontakt",
+        contact_desc: "Ob Sie eine Frage haben oder einfach nur Hallo sagen wollen, ich werde mein Bestes geben, um mich bei Ihnen zu melden!",
+        contact_btn: "E-Mail Senden",
+        nav_contact: "Kontakt"
     }
 };
