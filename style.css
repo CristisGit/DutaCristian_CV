@@ -73,8 +73,8 @@ ul {
 
 .nav-links {
     display: flex;
-    gap: 3rem;
-    /* Increased spacing */
+    gap: 2rem;
+    /* Optimized spacing to prevent overflow */
     align-items: center;
 }
 
@@ -92,11 +92,10 @@ ul {
 
 .lang-switch {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    /* Increased spacing between buttons */
     margin-left: 2rem;
-    /* Increased spacing */
     padding-left: 2rem;
-    /* Increased spacing */
     border-left: 1px solid var(--text-secondary);
 }
 
