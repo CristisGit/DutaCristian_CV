@@ -9,6 +9,7 @@ const translations = {
         nav_about: "About",
         nav_exp: "Experience",
         nav_skills: "Skills",
+        nav_contact: "Contact",
 
         // About Section
         about_story_title: "The Story",
@@ -17,7 +18,7 @@ const translations = {
         about_uni: "Technical University of Cluj Napoca",
         about_faculty: "Faculty of Civil Engineering",
 
-        // Experience Stories (Derived from [cite: 17, 18, 19, 20])
+        // Experience Stories
         role_dev: "Automation Developer",
         date_1: "Sept 2023 - July 2025",
         job1_preview: "Designed resilient end-to-end automations for uncollaborative 3rd-party websites...",
@@ -34,13 +35,17 @@ const translations = {
         role_civil: "Civil Engineer (Legacy)",
         job4_preview: "Developed strong logic and analytical skills...",
         job4_story: "For 9 years, I worked as a Civil Engineer. While the domain was different, the mindset was identical to software development: rigorous planning, structural logic, and strict adherence to specifications. <br><br>I managed detailed design documentation using AutoCAD and VBA, which was my first step into programming logic.",
+
         // Contact Section
         contact_title: "Get In Touch",
         contact_desc: "Whether you have a question or just want to say hi, I'll try my best to get back to you!",
         contact_btn: "Say Hello",
-        nav_contact: "Contact"
+
+        // Skills
+        skill_rpa: "RPA Core",
+        skill_script: "Scripting",
+        skill_adv: "Advanced"
     },
-    // (Pentru concizie, am inclus doar Engleza aici, dar logica se aplică și la RO/DE)
     ro: {
         hero_role: "Dezvoltator Automatizări",
         hero_title: "Precizie în Automatizare.",
@@ -51,6 +56,7 @@ const translations = {
         nav_about: "Despre",
         nav_exp: "Experiență",
         nav_skills: "Abilități",
+        nav_contact: "Contact",
 
         // About Section
         about_story_title: "Povestea Mea",
@@ -60,22 +66,32 @@ const translations = {
         about_faculty: "Facultatea de Construcții",
 
         role_dev: "Dezvoltator Automatizări",
+
         date_1: "Sept 2023 - Iulie 2025",
+        date_2: "Mai 2023 - Aug 2023",
+        date_3: "Apr 2021 - Mai 2023",
         job1_preview: "Am proiectat automatizări robuste pentru site-uri terțe...",
         job1_story: "La UBIO, m-am confruntat cu provocarea de a automatiza site-uri de turism care se schimbau dinamic. <br><br><strong>Soluția Mea:</strong> Am creat algoritmi iterativi folosind JavaScript și Regex pentru a 'citi' structura paginii dinamic. Acest lucru a asigurat finalizarea rezervărilor complexe chiar și atunci când site-ul țintă își schimba layout-ul.",
-        // ... (restul traducerilor urmează același model)
+
         job2_preview: "Mapare procese și integrare Chatboți...",
         job2_story: "Am colaborat în echipe Agile pentru a mapa procese de business. Am integrat roboți RPA cu interfețe Chatbot și API-uri pentru procesare în timp real.",
+
         job3_preview: "Utilizare JavaScript și Regex...",
         job3_story: "La Paddy Power, focusul a fost pe volume mari de date. Am folosit selectori CSS avansați și Regex pentru a extrage date web sofisticate și am optimizat continuu roboții live.",
+
         role_civil: "Inginer Civil",
         job4_preview: "Dezvoltare abilități analitice...",
         job4_story: "Timp de 9 ani am aplicat o logică structurală riguroasă în proiectare, folosind AutoCAD și VBA.",
+
         // Contact
         contact_title: "Contactează-mă",
         contact_desc: "Fie că ai o întrebare sau doar vrei să saluți, voi încerca să îți răspund cât mai repede!",
         contact_btn: "Trimite Email",
-        nav_contact: "Contact"
+
+        // Skills
+        skill_rpa: "Nucleu RPA",
+        skill_script: "Scripting",
+        skill_adv: "Avansat"
     },
     de: {
         hero_role: "Automatisierungsentwickler",
@@ -87,6 +103,7 @@ const translations = {
         nav_about: "Über Mich",
         nav_exp: "Erfahrung",
         nav_skills: "Fähigkeiten",
+        nav_contact: "Kontakt",
 
         // About Section
         about_story_title: "Die Geschichte",
@@ -96,20 +113,31 @@ const translations = {
         about_faculty: "Fakultät für Bauingenieurwesen",
 
         role_dev: "Automatisierungsentwickler",
+
         date_1: "Sept 2023 - Juli 2025",
+        date_2: "Mai 2023 - Aug 2023",
+        date_3: "Apr 2021 - Mai 2023",
         job1_preview: "Entwicklung robuster Automatisierungen für schwierige Webseiten...",
         job1_story: "Bei UBIO stand ich vor der Herausforderung, dynamische Reise-Websites zu automatisieren. <br><br><strong>Meine Lösung:</strong> Ich entwickelte iterative Algorithmen mit JavaScript und Regex, um die Seitenstruktur dynamisch zu lesen. Dies sicherte den Abschluss komplexer Buchungen.",
+
         job2_preview: "Prozessabbildung und Chatbot-Integration...",
         job2_story: "Ich arbeitete in Agile-Teams an der Prozessabbildung. Ich integrierte RPA-Roboter mit Chatbots und APIs für Echtzeitverarbeitung.",
+
         job3_preview: "Nutzung von JavaScript und Regex...",
         job3_story: "Bei Paddy Power lag der Fokus auf großen Datenmengen. Ich nutzte fortgeschrittene CSS-Selektoren und Regex für komplexe Datenextraktion und optimierte Live-Roboter.",
+
         role_civil: "Bauingenieur",
         job4_preview: "Entwicklung analytischer Fähigkeiten...",
         job4_story: "9 Jahre lang wandte ich strenge strukturelle Logik im Design an, unter Verwendung von AutoCAD und VBA.",
+
         // Contact
         contact_title: "Kontakt",
         contact_desc: "Ob Sie eine Frage haben oder einfach nur Hallo sagen wollen, ich werde mein Bestes geben, um mich bei Ihnen zu melden!",
         contact_btn: "E-Mail Senden",
-        nav_contact: "Kontakt"
+
+        // Skills
+        skill_rpa: "RPA Kern",
+        skill_script: "Skripting",
+        skill_adv: "Fortgeschritten"
     }
 };
