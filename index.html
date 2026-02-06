@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Duta | Automation Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+
+    <nav class="navbar">
+        <div class="logo">CD.</div>
+        <div class="nav-links">
+            <a href="#about" data-lang="nav_about">About</a>
+            <a href="#experience" data-lang="nav_exp">Experience</a>
+            <a href="#skills" data-lang="nav_skills">Skills</a>
+            <div class="lang-switch">
+                <button onclick="setLanguage('en')" class="lang-btn active">EN</button>
+                <button onclick="setLanguage('ro')" class="lang-btn">RO</button>
+                <button onclick="setLanguage('de')" class="lang-btn">DE</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero-section">
+            <div class="content-wrapper glass-card hero-card">
+                <p class="overline">Cristian Duta</p>
+                <h1 data-lang="hero_role">Automation Developer & Engineer</h1>
+                <h2 data-lang="hero_title">Precision in Automation.</h2>
+                <p class="description" data-lang="hero_desc">Leveraging 9 years of engineering logic to build resilient,
+                    self-healing RPA architectures.</p>
+                <a href="#experience" class="cta-button" data-lang="hero_btn">View Work History <i
+                        class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">01. <span data-lang="nav_about">About Me</span></h2>
+                <div class="grid-2">
+                    <div class="glass-card reveal">
+                        <h3 data-lang="about_story_title">The Story</h3>
+                        <p data-lang="about_story">I am a results-driven Automation Developer specializing in UiPath. My
+                            background is unique: I transitioned from 9 years of Civil Engineering to IT. This
+                            engineering foundation allows me to approach automation with rigorous logic, structural
+                            thinking, and attention to detail.</p>
+                    </div>
+                    <div class="glass-card reveal delay-100">
+                        <h3 data-lang="about_edu_title">Education</h3>
+                        <div class="education-item">
+                            <strong data-lang="about_uni">Technical University of Cluj Napoca</strong>
+                            <p data-lang="about_faculty">Faculty of Civil Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">02. <span data-lang="nav_exp">Experience</span></h2>
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="job-header">
+                                <h3 data-lang="role_dev">Automation Developer</h3>
+                                <span class="company">S.C. UBIO S.R.L.</span>
+                                <span class="date" data-lang="date_1">Sept 2023 - July 2025</span>
+                            </div>
+                            <p class="preview-text" data-lang="job1_preview">Designed resilient end-to-end automations
+                                for uncollaborative 3rd-party websites...</p>
+                            <div class="full-story hidden">
+                                <p data-lang="job1_story"></p>
+                            </div>
+                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
+                                    class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="job-header">
+                                <h3 data-lang="role_dev">Automation Developer</h3>
+                                <span class="company">Future WorkForce S.R.L.</span>
+                                <span class="date" data-lang="date_2">May 2023 - Aug 2023</span>
+                            </div>
+                            <p class="preview-text" data-lang="job2_preview">Mapped end-to-end business processes and
+                                integrated Chatbots...</p>
+                            <div class="full-story hidden">
+                                <p data-lang="job2_story"></p>
+                            </div>
+                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
+                                    class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="job-header">
+                                <h3 data-lang="role_dev">Automation Developer</h3>
+                                <span class="company">Paddy Power Betfair</span>
+                                <span class="date" data-lang="date_3">Apr 2021 - May 2023</span>
+                            </div>
+                            <p class="preview-text" data-lang="job3_preview">Utilized JavaScript and Regex for complex
+                                web scraping...</p>
+                            <div class="full-story hidden">
+                                <p data-lang="job3_story"></p>
+                            </div>
+                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
+                                    class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="job-header">
+                                <h3 data-lang="role_civil">Civil Engineer</h3>
+                                <span class="company">Various Firms</span>
+                                <span class="date">2008 - 2019</span>
+                            </div>
+                            <p class="preview-text" data-lang="job4_preview">Developed strong logic and analytical
+                                skills...</p>
+                            <div class="full-story hidden">
+                                <p data-lang="job4_story"></p>
+                            </div>
+                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
+                                    class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="content-wrapper">
+                <h2 class="section-title">03. <span data-lang="nav_skills">Technical Stack</span></h2>
+                <div class="grid-3">
+                    <div class="glass-card reveal">
+                        <h3><i class="fas fa-robot accent-icon"></i> RPA Core</h3>
+                        <div class="tags">
+                            <span class="tag">UiPath Studio</span>
+                            <span class="tag">Orchestrator</span>
+                            <span class="tag">REFramework</span>
+                            <span class="tag">Attended/Unattended</span>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal delay-100">
+                        <h3><i class="fas fa-code accent-icon"></i> Scripting</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Regex</span>
+                            <span class="tag">JSON</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal delay-200">
+                        <h3><i class="fas fa-brain accent-icon"></i> Advanced</h3>
+                        <div class="tags">
+                            <span class="tag">Document Understanding</span>
+                            <span class="tag">AI/ML Models</span>
+                            <span class="tag">Chatbots</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content-wrapper">
+            <p>&copy; 2026 Cristian Duta. Built with <i class="fas fa-heart accent-icon"></i> and Logic.</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

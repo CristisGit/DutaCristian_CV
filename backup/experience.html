@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Duta | Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header></header>
+
+    <div class="container" style="margin-top: 60px;">
+        <h2 style="margin-bottom: 40px;">Professional History</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item" onclick="toggleStory(this)">
+                <span class="job-role" data-lang="role_dev">Automation Developer</span>
+                <span class="job-company">S.C. UBIO S.R.L.</span>
+                <span class="job-date" data-lang="date_1">Sept 2023 - July 2025</span>
+                <div class="job-preview" data-lang="job1_preview">Click to read details...</div>
+                <div class="job-story" data-lang="job1_story">Loading story...</div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleStory(this)">
+                <span class="job-role" data-lang="role_dev">Automation Developer</span>
+                <span class="job-company">Future WorkForce S.R.L.</span>
+                <span class="job-date" data-lang="date_2">May 2023 - Aug 2023</span>
+                <div class="job-preview" data-lang="job2_preview">Click to read details...</div>
+                <div class="job-story" data-lang="job2_story">Loading story...</div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleStory(this)">
+                <span class="job-role" data-lang="role_dev">Automation Developer</span>
+                <span class="job-company">Paddy Power Betfair</span>
+                <span class="job-date" data-lang="date_3">Apr 2021 - May 2023</span>
+                <div class="job-preview" data-lang="job3_preview">Click to read details...</div>
+                <div class="job-story" data-lang="job3_story">Loading story...</div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleStory(this)">
+                <span class="job-role" data-lang="role_civil">Civil Engineer</span>
+                <span class="job-company">Various Firms</span>
+                <span class="job-date">2008 - 2019</span>
+                <div class="job-preview" data-lang="job4_preview">Click to read details...</div>
+                <div class="job-story" data-lang="job4_story">Loading story...</div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="translations.js"></script>
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+    <script>
+        renderHeader('experience');
+        renderFooter();
+        // Load text immediately
+        setLanguage('en'); 
+    </script>
+</body>
+</html>
