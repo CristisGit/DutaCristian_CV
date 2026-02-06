@@ -44,7 +44,12 @@ const translations = {
         // Skills
         skill_rpa: "RPA Core",
         skill_script: "Scripting",
-        skill_adv: "Advanced"
+        skill_adv: "Advanced",
+
+        // Misc
+        company_various: "Various Firms",
+        btn_read_more: "Read More",
+        btn_show_less: "Show Less"
     },
     ro: {
         hero_role: "Dezvoltator Automatizări",
@@ -91,7 +96,12 @@ const translations = {
         // Skills
         skill_rpa: "Nucleu RPA",
         skill_script: "Scripting",
-        skill_adv: "Avansat"
+        skill_adv: "Avansat",
+
+        // Misc
+        company_various: "Diverse Firme",
+        btn_read_more: "Citește Mai Mult",
+        btn_show_less: "Arată Mai Puțin"
     },
     de: {
         hero_role: "Automatisierungsentwickler",
@@ -138,6 +148,11 @@ const translations = {
         // Skills
         skill_rpa: "RPA Kern",
         skill_script: "Skripting",
-        skill_adv: "Fortgeschritten"
+        skill_adv: "Fortgeschritten",
+
+        // Misc
+        company_various: "Verschiedene Firmen",
+        btn_read_more: "Mehr Lesen",
+        btn_show_less: "Weniger Anzeigen"
     }
 };

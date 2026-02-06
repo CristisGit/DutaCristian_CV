@@ -95,10 +95,17 @@ function setLanguage(lang) {
     if (!translations[lang]) return;
     currentLang = lang;
 
-    // Update active button
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
-    });
+    // Update Dropdown Button Text
+    const currentLangSpan = document.getElementById('current-lang');
+    if (currentLangSpan) {
+        currentLangSpan.textContent = lang.toUpperCase();
+    }
+
+    // Close Dropdown
+    const menu = document.getElementById('lang-menu');
+    if (menu) {
+        menu.classList.remove('show');
+    }
 
     // Update text content
     document.querySelectorAll('[data-lang]').forEach(element => {
@@ -116,18 +123,39 @@ function setLanguage(lang) {
     localStorage.setItem('preferredLang', lang);
 }
 
+function toggleLangMenu() {
+    const menu = document.getElementById('lang-menu');
+    menu.classList.toggle('show');
+}
+
+// Close menu when clicking outside
+window.addEventListener('click', function (e) {
+    const dropdown = document.querySelector('.lang-dropdown');
+    const menu = document.getElementById('lang-menu');
+    if (dropdown && !dropdown.contains(e.target)) {
+        menu.classList.remove('show');
+    }
+});
+
+// Story Toggle
 // Story Toggle
 function toggleStory(btn) {
     const parent = btn.parentElement;
     const storyDiv = parent.querySelector('.full-story');
     const isHidden = storyDiv.classList.contains('hidden');
+    const textSpan = btn.querySelector('span');
+    const icon = btn.querySelector('i');
 
     if (isHidden) {
         storyDiv.classList.remove('hidden');
-        btn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+        textSpan.textContent = translations[currentLang].btn_show_less || "Show Less";
+        textSpan.setAttribute('data-lang', 'btn_show_less');
+        icon.className = 'fas fa-chevron-up';
     } else {
         storyDiv.classList.add('hidden');
-        btn.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
+        textSpan.textContent = translations[currentLang].btn_read_more || "Read More";
+        textSpan.setAttribute('data-lang', 'btn_read_more');
+        icon.className = 'fas fa-chevron-down';
     }
 }
 

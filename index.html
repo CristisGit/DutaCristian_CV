@@ -24,10 +24,15 @@
             <a href="#experience" data-lang="nav_exp">Experience</a>
             <a href="#skills" data-lang="nav_skills">Skills</a>
             <a href="#contact" data-lang="nav_contact">Contact</a>
-            <div class="lang-switch">
-                <button onclick="setLanguage('en')" class="lang-btn active">EN</button>
-                <button onclick="setLanguage('ro')" class="lang-btn">RO</button>
-                <button onclick="setLanguage('de')" class="lang-btn">DE</button>
+            <div class="lang-dropdown">
+                <button class="lang-drop-btn" onclick="toggleLangMenu()">
+                    <span id="current-lang">EN</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-menu" id="lang-menu">
+                    <div class="lang-item" onclick="setLanguage('en')">English</div>
+                    <div class="lang-item" onclick="setLanguage('ro')">Română</div>
+                    <div class="lang-item" onclick="setLanguage('de')">Deutsch</div>
+                </div>
             </div>
         </div>
     </nav>
@@ -88,8 +93,10 @@
                             <div class="full-story hidden">
                                 <p data-lang="job1_story"></p>
                             </div>
-                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
-                                    class="fas fa-chevron-down"></i></button>
+                            <button class="expand-btn" onclick="toggleStory(this)">
+                                <span data-lang="btn_read_more">Read More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -107,8 +114,10 @@
                             <div class="full-story hidden">
                                 <p data-lang="job2_story"></p>
                             </div>
-                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
-                                    class="fas fa-chevron-down"></i></button>
+                            <button class="expand-btn" onclick="toggleStory(this)">
+                                <span data-lang="btn_read_more">Read More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -126,8 +135,10 @@
                             <div class="full-story hidden">
                                 <p data-lang="job3_story"></p>
                             </div>
-                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
-                                    class="fas fa-chevron-down"></i></button>
+                            <button class="expand-btn" onclick="toggleStory(this)">
+                                <span data-lang="btn_read_more">Read More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -137,7 +148,7 @@
                         <div class="timeline-content glass-card">
                             <div class="job-header">
                                 <h3 data-lang="role_civil">Civil Engineer</h3>
-                                <span class="company">Various Firms</span>
+                                <span class="company" data-lang="company_various">Various Firms</span>
                                 <span class="date">2008 - 2019</span>
                             </div>
                             <p class="preview-text" data-lang="job4_preview">Developed strong logic and analytical
@@ -145,8 +156,10 @@
                             <div class="full-story hidden">
                                 <p data-lang="job4_story"></p>
                             </div>
-                            <button class="expand-btn" onclick="toggleStory(this)">Read More <i
-                                    class="fas fa-chevron-down"></i></button>
+                            <button class="expand-btn" onclick="toggleStory(this)">
+                                <span data-lang="btn_read_more">Read More</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +172,7 @@
                 <h2 class="section-title">03. <span data-lang="nav_skills">Technical Stack</span></h2>
                 <div class="grid-3">
                     <div class="glass-card reveal">
-                        <h3><i class="fas fa-robot accent-icon"></i> RPA Core</h3>
+                        <h3 data-lang="skill_rpa"><i class="fas fa-robot accent-icon"></i> RPA Core</h3>
                         <div class="tags">
                             <span class="tag">UiPath Studio</span>
                             <span class="tag">Orchestrator</span>
@@ -168,7 +181,7 @@
                         </div>
                     </div>
                     <div class="glass-card reveal delay-100">
-                        <h3><i class="fas fa-code accent-icon"></i> Scripting</h3>
+                        <h3 data-lang="skill_script"><i class="fas fa-code accent-icon"></i> Scripting</h3>
                         <div class="tags">
                             <span class="tag">JavaScript</span>
                             <span class="tag">Regex</span>
@@ -177,7 +190,7 @@
                         </div>
                     </div>
                     <div class="glass-card reveal delay-200">
-                        <h3><i class="fas fa-brain accent-icon"></i> Advanced</h3>
+                        <h3 data-lang="skill_adv"><i class="fas fa-brain accent-icon"></i> Advanced</h3>
                         <div class="tags">
                             <span class="tag">Document Understanding</span>
                             <span class="tag">AI/ML Models</span>
@@ -216,8 +229,8 @@
         </div>
     </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="translations.js?v=2"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>
