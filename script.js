@@ -119,8 +119,27 @@ function setLanguage(lang) {
         }
     });
 
+    // Render Legacy Roles
+    renderLegacyRoles(lang);
+
     // Save preference
     localStorage.setItem('preferredLang', lang);
+}
+
+function renderLegacyRoles(lang) {
+    const container = document.querySelector('.legacy-timeline-container');
+    if (!container || !translations[lang].legacy_roles) return;
+
+    container.innerHTML = translations[lang].legacy_roles.map(role => `
+        <div class="legacy-item">
+            <div class="legacy-header">
+                <strong>${role.role}</strong>
+                <span class="legacy-company">@ ${role.company}</span>
+            </div>
+            <span class="legacy-date">${role.date}</span>
+            <p class="legacy-desc">${role.desc}</p>
+        </div>
+    `).join('');
 }
 
 function toggleLangMenu() {
@@ -137,7 +156,6 @@ window.addEventListener('click', function (e) {
     }
 });
 
-// Story Toggle
 // Story Toggle
 function toggleStory(btn) {
     const parent = btn.parentElement;
@@ -156,6 +174,22 @@ function toggleStory(btn) {
         textSpan.textContent = translations[currentLang].btn_read_more || "Read More";
         textSpan.setAttribute('data-lang', 'btn_read_more');
         icon.className = 'fas fa-chevron-down';
+    }
+}
+
+// Legacy Toggle
+function toggleLegacyHistory(btn) {
+    const container = document.getElementById('legacy-history');
+    const icon = btn.querySelector('i');
+
+    container.classList.toggle('hidden');
+
+    if (container.classList.contains('hidden')) {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+    } else {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
     }
 }
 

@@ -367,7 +367,107 @@ h2 {
     gap: 0.5rem;
 }
 
-/* Skills/Tags */
+/* Bullet Points in Preview */
+.preview-text ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.preview-text li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.preview-text li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Legacy Toggle Button */
+.legacy-toggle-btn {
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.legacy-toggle-btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+
+/* Legacy Nested History */
+.legacy-history {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    border-left: 1px dashed rgba(148, 163, 184, 0.2);
+    margin-left: 0.5rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.legacy-history.hidden {
+    display: none;
+}
+
+.legacy-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.legacy-item::before {
+    content: '';
+    position: absolute;
+    left: -1.35rem;
+    /* Adjust based on border padding */
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    background: var(--text-secondary);
+    border-radius: 50%;
+}
+
+.legacy-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.legacy-company {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.legacy-date {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.legacy-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
