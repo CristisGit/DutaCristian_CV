@@ -396,7 +396,34 @@ const translations = {
 
         role_civil: "Bauingenieur",
         job4_preview: "Entwicklung analytischer Fähigkeiten...",
-        job4_story: "9 Jahre lang wandte ich strenge strukturelle Logik im Design an, unter Verwendung von AutoCAD und VBA.",
+        job4_story: "9 Jahre lang arbeitete ich als Bauingenieur. Die Denkweise war identisch mit der Softwareentwicklung: strenge Planung und strukturelle Logik. Ich verwaltete Designdokumentationen mit AutoCAD und VBA, mein erster Schritt in die Programmierlogik.",
+
+        legacy_roles: [
+            {
+                role: "Technischer Zeichner",
+                company: "Project System Consulting S.R.L.",
+                date: "Juni 2019 – März 2021",
+                desc: "Entwurf und Detaillierung technischer Zeichnungen für die Infrastruktur."
+            },
+            {
+                role: "Technischer Zeichner",
+                company: "S.C. EXDEPRO S.R.L.",
+                date: "Juni 2017 – Juli 2019",
+                desc: "Ausarbeitung komplexer technischer Details mit AutoCAD Civil 3D."
+            },
+            {
+                role: "Technischer Zeichner",
+                company: "S.C. PROEXCO S.R.L.",
+                date: "Juni 2012 – Juni 2017",
+                desc: "Erstellung präziser Leistungsverzeichnisse und Materialabschätzungen."
+            },
+            {
+                role: "Assistent der Projektleitung",
+                company: "Selina Group - Drumuri Bihor S.A.",
+                date: "Juli 2011 – Feb 2012",
+                desc: "Operative Unterstützung des Projektleiters bei der Planung und Ausführung von Bauarbeiten."
+            }
+        ],
 
         // Contact
         contact_title: "Kontakt",
