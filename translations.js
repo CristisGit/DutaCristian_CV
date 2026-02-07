@@ -330,20 +330,41 @@ const translations = {
 
         role_dev: "Dezvoltator Automatizări",
 
+        // Job 1
         date_1: "Sept 2023 - Iulie 2025",
-        date_2: "Mai 2023 - Aug 2023",
-        date_3: "Apr 2021 - Mai 2023",
-        job1_preview: "Am proiectat automatizări robuste pentru site-uri terțe...",
+        job1_preview: `<ul>
+            <li>Am condus proiectarea și implementarea de soluții de automatizare robuste folosind UiPath și scripturi custom.</li>
+            <li>Am creat algoritmi iterativi adaptabili pentru procese complexe pe site-uri terțe necolaborative (ex: rezervări zboruri).</li>
+            <li>Am utilizat un stack tehnic divers: JavaScript, HTML, selectori CSS, JSON și Regex pentru extracția datelor.</li>
+        </ul>`,
         job1_story: "La UBIO, m-am confruntat cu provocarea de a automatiza site-uri de turism care se schimbau dinamic. <br><br><strong>Soluția Mea:</strong> Am creat algoritmi iterativi folosind JavaScript și Regex pentru a 'citi' structura paginii dinamic. Acest lucru a asigurat finalizarea rezervărilor complexe chiar și atunci când site-ul țintă își schimba layout-ul.",
 
-        job2_preview: "Mapare procese și integrare Chatboți...",
-        job2_story: "Am colaborat în echipe Agile pentru a mapa procese de business. Am integrat roboți RPA cu interfețe Chatbot și API-uri pentru procesare în timp real.",
+        // Job 2
+        date_2: "Mai 2023 - Aug 2023",
+        job2_preview: `<ul>
+            <li>Am efectuat analize detaliate și maparea proceselor de business pentru a identifica oprtunități de automatizare.</li>
+            <li>Am integrat roboți RPA cu interfețe Chatbot și API-uri pentru procesare în timp real.</li>
+            <li>Am colaborat în echipe Agile, oferind rapoarte zilnice și respectând termenele limită.</li>
+        </ul>`,
+        job2_story: "În acest rol, am trecut dincolo de simpla execuție la optimizarea proceselor. Am colaborat în echipe Agile pentru a mapa procese end-to-end. <br><br><strong>Realizare Cheie:</strong> Am integrat roboți RPA cu interfețe Chatbot și API-uri. Am redactat documentație tehnică, inclusiv user stories și scripturi UAT.",
 
-        job3_preview: "Utilizare JavaScript și Regex...",
-        job3_story: "La Paddy Power, focusul a fost pe volume mari de date. Am folosit selectori CSS avansați și Regex pentru a extrage date web sofisticate și am optimizat continuu roboții live.",
+        // Job 3
+        date_3: "Apr 2021 - Mai 2023",
+        job3_preview: `<ul>
+            <li>Am gestionat mentenanța și optimizarea continuă a roboților live, identificând proactiv blocajele.</li>
+            <li>Am condus verificări riguroase de QA (black box testing) pentru a asigura stabilitatea și acuratețea.</li>
+            <li>Am folosit selectori CSS avansați și Regex pentru a extrage date web sofisticate din surse cu volum mare.</li>
+        </ul>`,
+        job3_story: "La Paddy Power Betfair, focusul a fost pe volume mari de date. Am folosit selectori CSS avansați și Regex pentru a extrage date web sofisticate. <br><br><strong>Activitatea Zilnică:</strong> Am gestionat optimizarea continuă a roboților live, identificând proactiv blocajele și refăcând codul pentru performanță.",
 
-        role_civil: "Inginer Civil",
-        job4_preview: "Dezvoltare abilități analitice...",
+        // Legacy
+        role_civil: "Inginer Civil (Legacy)",
+        role_legacy_title: "Istoric Inginerie Civilă",
+        job4_preview: `<ul>
+            <li><strong>Experiență 9 ani:</strong> Planificare riguroasă, logică structurală și aderență strictă la specificații.</li>
+            <li><strong>Proiectare Tehnică:</strong> Am condus proiectarea detaliată a desenelor inginerești 2D/3D.</li>
+            <li><strong>Unelte:</strong> Expertiză în AutoCAD Civil 3D, Auto-LISP, VBA și Mathcad.</li>
+        </ul>`,
         job4_story: "Timp de 9 ani am aplicat o logică structurală riguroasă în proiectare, folosind AutoCAD și VBA.",
 
         // Contact
@@ -385,17 +406,33 @@ const translations = {
         date_1: "Sept 2023 - Juli 2025",
         date_2: "Mai 2023 - Aug 2023",
         date_3: "Apr 2021 - Mai 2023",
-        job1_preview: "Entwicklung robuster Automatisierungen für schwierige Webseiten...",
+        job1_preview: `<ul>
+            <li>Leitete Design und Implementierung robuster End-to-End-Automatisierungen mit UiPath und Skripten.</li>
+            <li>Entwickelte anpassungsfähige iterative Algorithmen für komplexe Prozesse auf Drittanbieter-Websites.</li>
+            <li>Nutzte einen vielfältigen Tech-Stack: JavaScript, HTML, CSS-Selektoren, JSON und Regex zur Datenextraktion.</li>
+        </ul>`,
         job1_story: "Bei UBIO stand ich vor der Herausforderung, dynamische Reise-Websites zu automatisieren. <br><br><strong>Meine Lösung:</strong> Ich entwickelte iterative Algorithmen mit JavaScript und Regex, um die Seitenstruktur dynamisch zu lesen. Dies sicherte den Abschluss komplexer Buchungen.",
 
-        job2_preview: "Prozessabbildung und Chatbot-Integration...",
+        job2_preview: `<ul>
+            <li>Führte detaillierte Analysen und Prozessabbildungen durch, um Automatisierungspotenziale zu identifizieren.</li>
+            <li>Integrierte RPA-Roboter mit Chatbot-Schnittstellen und APIs für Echtzeitverarbeitung.</li>
+            <li>Arbeitete in agilen Teams, lieferte tägliche Berichte und hielt Zeitpläne ein.</li>
+        </ul>`,
         job2_story: "Ich arbeitete in Agile-Teams an der Prozessabbildung. Ich integrierte RPA-Roboter mit Chatbots und APIs für Echtzeitverarbeitung.",
 
-        job3_preview: "Nutzung von JavaScript und Regex...",
+        job3_preview: `<ul>
+            <li>Verwaltete die Wartung und Optimierung von Live-Robotern und identifizierte proaktiv Engpässe.</li>
+            <li>Leitete strenge QA-Prüfungen (Black-Box-Tests), um Stabilität und Genauigkeit sicherzustellen.</li>
+            <li>Nutzte fortgeschrittene CSS-Selektoren und Regex für komplexe Datenextraktion aus großen Datenmengen.</li>
+        </ul>`,
         job3_story: "Bei Paddy Power lag der Fokus auf großen Datenmengen. Ich nutzte fortgeschrittene CSS-Selektoren und Regex für komplexe Datenextraktion und optimierte Live-Roboter.",
 
         role_civil: "Bauingenieur",
-        job4_preview: "Entwicklung analytischer Fähigkeiten...",
+        job4_preview: `<ul>
+            <li><strong>9 Jahre Erfahrung:</strong> Strenge Planung, strukturelle Logik und Einhaltung von Spezifikationen.</li>
+            <li><strong>Technisches Zeichnen:</strong> Leitete das detaillierte Design von 2D/3D-Ingenieurzeichnungen.</li>
+            <li><strong>Tools:</strong> Versiert in AutoCAD Civil 3D, Auto-LISP, VBA und Mathcad.</li>
+        </ul>`,
         job4_story: "9 Jahre lang arbeitete ich als Bauingenieur. Die Denkweise war identisch mit der Softwareentwicklung: strenge Planung und strukturelle Logik. Ich verwaltete Designdokumentationen mit AutoCAD und VBA, mein erster Schritt in die Programmierlogik.",
 
         legacy_roles: [
