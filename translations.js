@@ -93,8 +93,8 @@ const translations = {
 
         // Skills
         skill_rpa: "RPA Core",
-        skill_script: "Scripting & Code",
-        skill_adv: "Advanced & Cloud",
+        skill_script: "Full-Stack & Web",
+        skill_adv: "Cloud & Architecture",
 
         // Misc
         company_various: "Various Firms",
@@ -298,9 +298,9 @@ const translations = {
         contact_btn: "E-Mail Senden",
 
         // Skills
-        skill_rpa: "RPA Kern",
-        skill_script: "Skripting & Code",
-        skill_adv: "Fortgeschritten & Cloud",
+        skill_rpa: "RPA Core",
+        skill_script: "Full-Stack & Web",
+        skill_adv: "Cloud & Architecture",
 
         // Misc
         company_various: "Verschiedene Firmen",
@@ -353,8 +353,8 @@ const translations = {
 
         // Skills
         skill_rpa: "Nucleu RPA",
-        skill_script: "Scripting",
-        skill_adv: "Avansat",
+        skill_script: "Full-Stack & Web",
+        skill_adv: "Cloud & Arhitectură",
 
         // Misc
         company_various: "Diverse Firme",
@@ -405,8 +405,8 @@ const translations = {
 
         // Skills
         skill_rpa: "RPA Kern",
-        skill_script: "Skripting",
-        skill_adv: "Fortgeschritten",
+        skill_script: "Full-Stack & Web",
+        skill_adv: "Cloud & Architektur",
 
         // Misc
         company_various: "Verschiedene Firmen",
